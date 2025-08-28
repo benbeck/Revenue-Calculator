@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(210, 20%, 18%);
+  --muted: hsl(210, 10%, 96%);
+  --muted-foreground: hsl(210, 8%, 45%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(210, 20%, 18%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(210, 20%, 18%);
+  --border: hsl(210, 12%, 90%);
+  --input: hsl(210, 12%, 90%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(210, 10%, 96%);
+  --secondary-foreground: hsl(210, 20%, 18%);
+  --accent: hsl(210, 10%, 96%);
+  --accent-foreground: hsl(210, 20%, 18%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(60, 9%, 98%);
+  --ring: hsl(210, 20%, 18%);
+  --radius: 0.5rem;
+
+  /* NerdWallet-inspired colors */
+  --nw-blue: hsl(207, 90%, 54%);
+  --nw-green: hsl(151, 100%, 33%);
+  --nw-light-green: hsl(151, 50%, 95%);
+  --nw-med-green: hsl(151, 45%, 85%);
+  --nw-dark-green: hsl(151, 40%, 75%);
+  --text-primary: hsl(210, 20%, 18%);
+  --text-secondary: hsl(210, 8%, 45%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 4%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 4%, 16%);
+  --muted-foreground: hsl(240, 5%, 65%);
+  --popover: hsl(240, 10%, 4%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 4%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 4%, 16%);
+  --input: hsl(240, 4%, 16%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 4%, 16%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 4%, 16%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 5%, 84%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .nw-blue {
+    color: hsl(207, 90%, 54%);
+  }
+  
+  .bg-nw-blue {
+    background-color: hsl(207, 90%, 54%);
+  }
+  
+  .nw-green {
+    color: hsl(151, 100%, 33%);
+  }
+  
+  .bg-nw-green {
+    background-color: hsl(151, 100%, 33%);
+  }
+  
+  .bg-nw-light-green {
+    background-color: hsl(151, 50%, 95%);
+  }
+  
+  .bg-nw-med-green {
+    background-color: hsl(151, 45%, 85%);
+  }
+  
+  .bg-nw-dark-green {
+    background-color: hsl(151, 40%, 75%);
+  }
+  
+  .text-primary {
+    color: hsl(210, 20%, 18%);
+  }
+  
+  .text-secondary {
+    color: hsl(210, 8%, 45%);
+  }
+}
